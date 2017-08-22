@@ -1,0 +1,462 @@
+<style>
+
+.section-header {
+   background-image: url('https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_LHero_bg.jpg'); 
+   background-size: cover;
+   color: #fff;
+    height: 500px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.h1-page-title {
+    text-transform: none;
+}
+
+.o-block--product-hero .m-block--module-heading {
+    position: static;
+}
+
+.levitate-logo-img {
+    width: 70%;
+    position: absolute;
+    top: 32%;
+    right: 15%;
+    left: 15%;
+}
+
+.countdown-increment > p {
+    line-height: 1;
+    margin: 0;
+}
+
+.countdown-increment-p {
+   font-weight: bold;
+   font-style: italic;
+}
+
+.signup-section {
+    margin: -130px 15% 0 15%;
+    background: white;
+    border: solid #f1f1f1 thin;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+
+.signup-p {
+   font-size: 1.25rem;
+   line-height: 1.5rem;
+}
+
+.signup-email-label {
+   font-weight: bold;
+}
+
+
+.signup-section .a-text-btn {
+    margin: 5px 25px;
+}
+
+   .form-top-div {
+      display: inline-block;
+      margin: 20px;
+   }
+
+   .form-text {
+       text-align: left;
+       margin-bottom: 15px;
+       font-family: "Proxima","Helvetica","Arial",sans-serif;
+       font-size: 11px;
+       letter-spacing: 1px;
+       text-transform: uppercase;
+       color: black;
+    }
+
+   .input-div, .btn-div {
+      float: left;
+   }
+
+   .btn-div {
+      margin-top:26px;
+    }
+
+   .form-input-field-email {
+      height: 40px !important;
+      width: 100% !important;
+   }
+
+   .a-btn--form-levitate {
+      margin-top: 5px;
+    }
+
+    .form-text-btn {
+       margin: 5px auto !important;
+    }
+
+
+.levitate-text-section {
+   text-align: center;
+   color: black;
+   margin-bottom: 120px;
+   width: 75%;
+}
+
+.shoe-img-section-container {
+   text-align: center;
+   padding: 20px;
+}
+
+.atc-style-blue .atcb-link, .atc-style-blue, .atcb-link:hover , .atc-style-blue .atcb-link:active, .atc-style-blue .atcb-link:focus {
+    margin: 0;
+    padding: 3px 25px !important;
+    color: #0363F7 !important;
+    font-family: "Verdana";
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    line-height: 20px;
+    background: white !important;
+    box-shadow: none !important;
+    border-radius: 0px;
+    zoom: 1;
+}
+
+/* removing underline from text btn */
+
+.a-text-btn:after {
+   height: 0px !important;
+}
+
+.a-text-btn:after {
+     height: 0px !important;
+} 
+
+/* Add hover effect to both text and add to calendar btns */
+
+.a-text-btn:hover, .atcb-link:hover {
+    color: #002855 !important;
+}
+
+.a-text-btn:hover, .atcb-link:hover {
+    color: #002855 !important;
+}
+
+/* New bottom image layout */
+
+.new-img-section-row-parent {
+   /*  width: 75%;
+    margin: auto; */
+}
+
+.new-img-section-row-2 {
+   margin-top: 0px !important;
+}
+
+.top-img-parent {
+   text-align: center !important;
+}
+
+.top-img-12 {
+   width: 95%  !important;
+   margin: 0 !important;
+}
+
+.right-img-6 , .left-img-6 {
+      width: 95%  !important;
+   }
+
+
+.left-img-6 {
+  margin: auto !important;
+}
+
+.right-img-6 {
+   margin: 15px auto !important; 
+}
+
+.m-block--gutter-images__container {
+   margin-top: 0 !important;
+}
+
+/* Trying to add hover effect */
+
+.floating{
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+
+@media only screen and (min-width: 595px) {
+   
+   .left-img-6 {
+      margin: 0 0 0 5% !important;
+   }
+
+   .right-img-6 {
+      margin: 0 5% 0 0  !important;
+   }
+
+   div.m-block--flexible-module:last-of-type {
+       margin-bottom: 0px;
+   }
+
+}
+
+@media only screen and (max-width: 583px) {
+   .input-div {
+      width: 100%;
+   }
+
+   .input-div, .btn-div {
+       float: none;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+
+   .section-header {
+      display: block !important;
+   }
+}
+
+@media only screen and (min-width: 767px) {
+   .levitate-logo-img {
+       width: 60%;
+       right: 20%;
+       left: 20%;
+   }
+
+}
+
+
+@media only screen and (max-width: 974px) {
+
+     .countdown-container {
+         margin: 30px 0 0 0;
+         top: 47% !important;
+      }
+
+     .signup-section {
+      margin-top: -140px !important;
+      }
+
+     .signup-section .a-text-btn {
+       margin: 5px auto;
+     }
+
+}
+
+@media only screen and (min-width: 975px) {
+
+      .countdown-container {
+         margin: 30px 0 0 0;
+      }
+
+     .countdown-increment-p {
+          font-size: 90px;
+      }
+
+    .o-block--product-hero--teaser + .m-block-teaser-signup {
+        margin-top: -100px;
+    }
+   
+   .levitate-logo-img {
+      top: 15%;
+   }
+}
+
+@media only screen and (min-width: 1280px) {
+
+     .countdown-increment-p {
+          font-size: 100px;
+      }
+
+   .levitate-logo-img {
+       top: 12%;
+   }
+
+}
+
+@media only screen and (min-width: 1750px) {
+   .levitate-logo-img {
+      top: 4%;
+   }
+}
+
+@media only screen and (min-width: 2000px) {
+   .levitate-logo-img {
+      top: 0%;
+      width: 50%;
+      right: 25%;
+      left: 25%;
+   }
+}
+
+</style>
+
+<!-- 1. Include style -->
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+
+<div class="o-block--product-hero o-block--product-hero--teaser desktop dark section-header" style="background-image: url('https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_LHero_bg.jpg'); color: #fff;">
+  <div class="m-block--module-heading">
+  <img class="levitate-logo-img  floating" src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_LHero_fg.png" alt="levitate logo" />
+
+<!-- OLD HEADER START
+
+    <p class="label--bold label--underline" tabindex="0">Coming Soon</p>
+    <h1 class="medium h1-page-title" tabindex="0">The Future of Energy Return</h1>
+  </div>
+  <img src="..&#x2F;..&#x2F;images&#x2F;levitate-hero.jpg" style="visibility: hidden; width: 100%;" />
+  <div class="o-block--product-hero--teaser__countdown col-sm-2 col-md-4 col-lg-8 countdown-container" tabindex="0">
+    <span class="o-block--product-hero__countdown__days o-block--product-hero__countdown--spacer countdown-increment">
+          <p class="o-block--product-hero__countdown__time xx-large countdown-increment-p">06</p>
+          <p class="label--bold">Days</p>
+        </span>
+    <span class="o-block--product-hero__countdown__hours o-block--product-hero__countdown--spacer countdown-increment">
+          <p class="o-block--product-hero__countdown__time xx-large countdown-increment-p">11</p>
+          <p class="label--bold">Hours</p>
+        </span>
+    <span class="o-block--product-hero__countdown__minutes o-block--product-hero__countdown--spacer countdown-increment">
+          <p class="o-block--product-hero__countdown__time xx-large countdown-increment-p">54</p>
+          <p class="label--bold">Minutes</p>
+        </span>
+    <span class="o-block--product-hero__countdown__seconds o-block--product-hero__countdown--spacer countdown-increment">
+          <p class="o-block--product-hero__countdown__time xx-large countdown-increment-p">03</p>
+          <p class="label--bold">Seconds</p>
+        </span>
+    <span class="v--hidden">remaining until product launch</span>
+
+      OLD HEADER END   -->
+
+  </div>
+</div>
+<!-- Sign up box -->
+<div class="m-block-teaser-signup col-sm-2--site__wrapper col-md-6--site__wrapper col-lg-8 signup-section">
+  <p class="m-block-teaser-signup__heading col-sm-2 col-md-6 col-lg-6 signup-p" tabindex="0">Be the first to know when the Levitate is available!</p>
+
+<!--
+  <div class="m-footer__email-signup site__wrapper">
+    <div class="m-footer__form column-width-half col-lg-6">
+      <p class="signup-email-label">ENTER YOUR EMAIL</p>
+      <input id="text" class="e-text__input x-small" type="text" placeholder="Text Input">
+
+      <button class="a-btn a-btn--form small--bold ">Sign Up</button>
+    </div>
+  </div>
+-->
+
+<!-- BRONTO FORM -->
+<form action="http://updates.brooksrunning.com/public/webform/process/" method="post">
+    <input name="fid" type="hidden" value="0t3knuk1wnrl8vnsli7u5slkb7ide"> <input name="sid" type="hidden" value="2b7b6d1eaa12b1cd90bc23a6514e6524"> <input name="delid" type="hidden" value=""> <input name="subid" type="hidden" value=""> <input name="td" type="hidden" value=""> <input name="formtype" type="hidden" value="addcontact"> 
+    <script type="text/javascript">
+    var fieldMaps = {}; 
+    </script>
+    <div class="section form-top-div" id="row_33886">
+      <div class="container" id="column_42796">
+        <div class="email field_block input-div">
+          <div class="caption form-text ">
+            <span class="signup-email-label">ENTER YOUR EMAIL</span>
+          </div>
+          <div class="field">
+            <span><input class="text field fb-email form-input-field-email" name="92158" size="35" type="text" value=""></span>
+            <div class="field_error"></div>
+          </div>
+        </div><input name="92164[1439859]" type="hidden" value="true"> <input name="92159[140110]" type="hidden" value="true">
+        <div class="field_block btn-div">
+          <div class="field">
+            <span><input type="submit" value="Subscribe" class="a-btn a-btn--form a-btn--form-levitate"></span>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both;">
+        &nbsp;
+      </div>
+    </div>
+  </form>
+
+
+  <a href="http://staging.web.brooks.demandware.net/s/BrooksRunning/levitate-bronto-text.html" class="dialogify a-text-btn a-text-btn--primary small--bold form-text-btn">Text me a Reminder</a>
+ 
+  <!-- 3. Place event data -->
+    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-09-19 24:00:00</var>
+            <var class="atc_date_end">2017-09-29 24:00:00</var>
+            <var class="atc_timezone">America/Los_Angeles</var>
+            <var class="atc_title">Pre-order the Brooks Levitate today!</var>
+            <var class="atc_description">Experience Infinite Energy with the new Brooks Levitate + URL to page</var>
+            <var class="atc_location">Worldwide</var>
+            <var class="atc_organizer">Brooks Running</var>
+            <var class="atc_organizer_email">brookssportswa@gmail.com</var>
+        </var>
+    </span>
+
+
+</div>
+<!-- Levitate is coming text -->
+<div class="m-block--text-module col-sm-2 col-md-6 col-lg-6 site__wrapper--padding levitate-text-section">
+  <h1 class="large" tabindex="0">Pre-sale starts Sept 20</h1>
+  <p class="o-block--text-module__copy" tabindex="0">To give runners the choice of amplified cushioning, we collaborated with chemisty giant BASF to develop a completely new midsole material</p>
+</div>
+
+<!-- NEW IMAGE SECTION -->
+<div class="m-block--gutter-images m-block--flexible-module top-img-parent new-img-section-row-parent" style="text-align: center;">
+  <div class="m-block--gutter-images__container top-img-parent">
+    <picture>
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_FullW_1.jpg">
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_FullW_1.jpg" media="(min-width: 975px)">
+      <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/072517_levitate_teaser_FullW_1.jpg" class="top-img-12" alt="image 3" tabindex="0">
+    </picture>
+  </div>
+</div>
+<div class="m-block--gutter-images m-block--flexible-module new-img-section-row-2 new-img-section-row-parent">
+  <div class="m-block--gutter-images__container split" style="text-align: center;">
+    <picture>
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_1.jpg">
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_1.jpg" media="(min-width: 975px)">
+      <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_1.jpg" class="left-img-6" alt="image 1" tabindex="0">
+    </picture>
+  </div>
+  <div class="m-block--gutter-images__container split " style="text-align: center;">
+    <picture>
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_2.jpg">
+      <source srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_2.jpg" media="(min-width: 975px)">
+      <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/080417_levitate_teaser_2UP_2.jpg" class="right-img-6" alt="image 2" tabindex="0">
+    </picture>
+  </div>
+</div>
+
+
+
+
+
+  <!-- 2. Include script -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
