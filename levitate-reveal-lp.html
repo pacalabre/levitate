@@ -76,29 +76,23 @@
    margin-bottom: 0 !important;
 }
 
-.img-row1-l {
-   margin: 30px 0 0 5% !important;
-   width: 95% !important;
-   padding-left: 5%;
-}
 
-.img-row1-r {
-   margin: 30px 5% 0 0 !important;
-   width: 95% !important;   
+.img-row1-r { 
   padding-right: 5%;
 }
 
 .img-row2-l {
-   margin: 0px 0 0 5% !important;
-   width: 95% !important;
    padding-left: 5%;
 }
 
 .img-row2-r {
-   margin: 0px 5% 0 0 !important;
-   width: 95% !important;
    padding-right: 5%;
 }
+
+.img-row1-l {
+   padding-left: 5%;
+}
+
 
 /* Shopable Card */
 
@@ -197,6 +191,22 @@
 
 }
 
+@media only screen and (max-width: 594px) {
+
+ .img-row2-r , .img-row2-l  {
+      padding: 0 5%;
+   }
+
+   .img-row1-l  {
+      padding: 5%;
+   }
+
+  .img-row1-r {
+      padding: 0 5%;
+   }
+
+}
+
 /* Mobile Styles END */
 
 /* In between mobile and desktop  START */
@@ -210,12 +220,15 @@
 
 /* In between mobile and desktop  END */
 
+/*
    .img-row1-r , .img-row1-l , .img-row2-l , .img-row2-r {
      margin: 10px auto !important;
      width: 90% !important;
      padding-right: 0 !important;
      padding-left: 0 !important;
    }
+
+*/
 
    .three-img-left-align {
        text-align: center;
@@ -311,35 +324,7 @@
   </div>
 <!-- Hero End -->
 
-<!-- Video Begin -->
-
-  <figure class="m-block--video-player m-block--flexible-module ratio-container ratio-container--benefits col-sm-2--site__wrapper col-md-4--site__wrapper col-lg-10 no-float site__wrapper">
-    <picture>
-      <source media="(min-width: 549px)" data-srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg">
-      <source data-srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg">
-      <img data-src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg" alt="benefits" />
-    </picture>
-    <noscript>
-      <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg" alt="benefits" srcset="/images/benefits-desktop-1x.png 2x" />
-    </noscript>
-    <div class="m-block--video-player--overlay">
-      <div class="play__btn x-small--bold" tabindex="0">
-        <svg class="icon icon-video-play" tabindex="0" onclick="keyboardBtnClick()"><use xlink:href="#icon-video-play"></use></svg>
-      </div>
-      <div class="m-block--video-player__video--overlay" tabindex="0">
-        <svg class="icon icon-video-pause"><use xlink:href="#icon-video-pause"></use></svg>
-      </div>
-      <div class="m-block--video-player--overlay__meta site__wrapper--padding">
-        <span class="medium" tabindex="0">See the Ghost 10 in Action.</span>
-        <span class="type" tabindex="0">Tested by runners like you.</span>
-      </div>
-    </div>
-    <iframe id="benefits-video" class="product-container__video-youtube" data-id="dLnuE7m62U0"   src="" frameborder="0"></iframe>
-  </figure>
-
-<!-- Video End -->
-
-<!-- new Video start -->
+<!-- Video START -->
 
 <figure class="m-block--video-player m-block--flexible-module ratio-container ratio-container--benefits col-sm-2--site__wrapper col-md-4--site__wrapper col-lg-10 no-float site__wrapper">
   <picture>
@@ -365,8 +350,7 @@
   <iframe id="benefits-video" class="product-container__video-youtube" data-id="dLnuE7m62U0" src="https://www.youtube.com/embed/RVHF8FLUPGo" frameborder="0"></iframe>
 </figure>
 
-
-<!-- new Video end -->
+<!-- Video END -->
 
 <!-- Technology Section START-->
 <div class="o-data-media__list site__wrapper--padding">
