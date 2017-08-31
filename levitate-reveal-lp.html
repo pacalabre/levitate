@@ -376,17 +376,36 @@
   <picture>
     <source media="(min-width: 549px)" data-srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg">
     <source data-srcset="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg">
-    <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg"  data-src="/images/benefits-desktop-1x.png" alt="benefits" />
+    <img id="videoImg" src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg"  data-src="/images/benefits-desktop-1x.png" alt="benefits" />
   </picture>
   <noscript>
       <img src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/ved428fad8647e06e9a000b561635e727ac890322/080417_levitate-video.jpg" alt="benefits" srcset="/images/benefits-desktop-1x.png 2x" />
     </noscript>
   <div class="m-block--video-player--overlay">
     <div class="play__btn x-small--bold" tabindex="0">
-      <svg class="icon icon-video-play" tabindex="0" onclick="keyboardBtnClick()"><use xlink:href="#icon-video-play"></use></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-video-play" id="icon-video-play-svg" onclick="br.keyboardBtnClick()">
+       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-play">
+                    <symbol id="icon-video-play" viewBox="0 0 32 32">
+                        <title>video-play</title>
+                        <path fill="" style="" d="M31.549 16.045c0 8.712-7.063 15.775-15.775 15.775s-15.775-7.063-15.775-15.775c0-8.712 7.063-15.775 15.775-15.775s15.775 7.063 15.775 15.775z"></path>
+                        <path fill="#fff" style="" d="M13.564 11.707c0-0.496 0.328-0.663 0.731-0.375l5.745 4.113c0.404 0.289 0.402 0.758 0 1.046l-5.745 4.113c-0.404 0.289-0.731 0.119-0.731-0.375v-8.524z"></path>
+                    </symbol>
+       </use>
+</svg>
+
+
+      <svg class="icon icon-video-play" tabindex="0" onclick="keyboardBtnClick()"><symbol id="icon-video-play" viewBox="0 0 32 32">
+      <path fill="" style="" d="M31.549 16.045c0 8.712-7.063 15.775-15.775 15.775s-15.775-7.063-15.775-15.775c0-8.712 7.063-15.775 15.775-15.775s15.775 7.063 15.775 15.775z"></path>
+      <path fill="${'#fff'}" d="M13.564 11.707c0-0.496 0.328-0.663 0.731-0.375l5.745 4.113c0.404 0.289 0.402 0.758 0 1.046l-5.745 4.113c-0.404 0.289-0.731 0.119-0.731-0.375v-8.524z"></path>
+    </symbol></svg>
     </div>
     <div class="m-block--video-player__video--overlay" tabindex="0">
-      <svg class="icon icon-video-pause"><use xlink:href="#icon-video-pause"></use></svg>
+      <svg class="icon icon-video-pause"><symbol id="icon-video-pause" viewBox="0 0 32 32">
+      <path fill="" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+      <path fill="${'#0363f7'}"></path>
+      <path fill="${'#0363f7'}"></path>
+    </symbol></svg>
     </div>
     <div class="m-block--video-player--overlay__meta site__wrapper--padding">
       <span class="medium" tabindex="0">Introducing the Levitate.</span>
@@ -556,4 +575,30 @@
 <div id="curalate-fan-reel-wrapper">&nbsp;</div>
 <script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/brooksrunning-1066/carousel.js"></script><script type="text/javascript">
 Curalate.FanReels.Carousel.init({ code: "brooksrunning", filters: {tags: "brooksendorsed"} });
+</script>
+
+<!-- Video JS -->
+
+<script>
+
+  function keyboardBtnClick() {
+    // hide the overlay
+    // console.log('keyboardBtnClick click');
+
+    // hide overlay div
+    $('.m-block--video-player--overlay').addClass('hide');
+    // hide image
+    $("#videoImg").hide().addClass('hide');
+    //play video
+    // ref https://codepen.io/martinwolf/pen/dyLAC
+    $("#benefits-video")[0].src += "&autoplay=1";
+
+//console.log('get video source');
+    var src = $(br.videoContainer)[0].src;
+    var sourceV = br.parseVideo(src);
+    //console.log(sourceV.type);
+    //console.log(sourceV.id);
+    //console.log('end video source');
+}
+
 </script>
