@@ -26,6 +26,10 @@
        z-index: 10;
      }
 
+  .description__wrapper {
+      width: 40%;
+  }
+
   /* End Header */
 
     .o-block--product-hero .overlay {
@@ -206,6 +210,23 @@
        margin-top: -80px;
     }
 
+   .hero-btn-section {
+      width: 90%;
+   }
+
+  .description__wrapper {
+     text-align: center;
+      width: 100%;
+  }
+
+   .feature__img--gradient {
+      padding-left: 0px !important;
+   }
+
+  .m-block--gutter-images img {
+     width: 90%;
+  }
+
   .three-img-section-div {
       padding: 5%;
    }
@@ -286,6 +307,24 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+  .description__wrapper {
+      width: 40% !important;
+  }
+
+  .m-block--gutter-images img {
+     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 974px) {
+
+    .shop-card-container {
+       width: 90%;
+     }
+
+}
+
 @media only screen and (min-width: 975px) {
     
     .floating-shoe-img {
@@ -356,7 +395,7 @@
   <div class="o-block--product-hero desktop overlay dark" style="background-image: url('..&#x2F;..&#x2F;images&#x2F;levitate-hero.jpg')">
     <div class="overlay"></div>
   </div>
-  <div class="m-block--text-module col-sm-2 col-md-5 col-lg-6 site__wrapper--padding">
+  <div class="m-block--text-module col-sm-2 col-md-5 col-lg-6 site__wrapper--padding hero-btn-section">
      <img class="header-levitate-logo" src="https://staging.web.brooks.demandware.net/on/demandware.static/-/Sites-BrooksRunning-Library/default/vd043ad941fafa9341848b418b01c28a9cb3e4a61/levitate-transparent.jpg"  />
     <p class="o-block--text-module__copy" tabindex="0">The most energy return of leading performance running shoes.</p>
     <a href="&#x2F;">
@@ -582,23 +621,23 @@ Curalate.FanReels.Carousel.init({ code: "brooksrunning", filters: {tags: "brooks
 <script>
 
   function keyboardBtnClick() {
-    // hide the overlay
-    // console.log('keyboardBtnClick click');
-
-    // hide overlay div
-    $('.m-block--video-player--overlay').addClass('hide');
-    // hide image
-    $("#videoImg").hide().addClass('hide');
-    //play video
-    // ref https://codepen.io/martinwolf/pen/dyLAC
-    $("#benefits-video")[0].src += "&autoplay=1";
-
-//console.log('get video source');
-    var src = $(br.videoContainer)[0].src;
-    var sourceV = br.parseVideo(src);
-    //console.log(sourceV.type);
-    //console.log(sourceV.id);
-    //console.log('end video source');
-}
+                        // hide the overlay
+                        // console.log('keyboardBtnClick click');
+ 
+                        // hide overlay div
+                        $('.m-block--video-player--overlay').addClass('hide');
+                        // hide image
+                        $("#videoImg").hide().addClass('hide');
+                        //play video
+                        // ref https://codepen.io/martinwolf/pen/dyLAC
+                        $("#benefits-video")[0].src += "&autoplay=1";
+ 
+                    //console.log('get video source');
+                        var src = $(br.videoContainer)[0].src;
+                        var sourceV = br.parseVideo(src);
+                        //console.log(sourceV.type);
+                        //console.log(sourceV.id);
+                        //console.log('end video source');
+                    }
 
 </script>
